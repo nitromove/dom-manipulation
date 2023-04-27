@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:  navajowhite;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+h1 span {
+    opacity: 0;
+    animation-name: fadeOut;
+    animation-delay: calc(var(--index) * 0.7s);
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.counter, section {
+    margin: 2% 0;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

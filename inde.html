@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Document</title>
+
+    <style>
+        h1 span {
+            --index: 1;
+        }
+
+        h1 span:nth-child(2) {
+            --index: 2;
+        }
+
+        h1 span:nth-child(3) {
+            --index: 3;
+        }
+
+        h1 span:nth-child(4) {
+            --index: 4;
+        }
+
+        h1 span:nth-child(5) {
+            --index: 5;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="welcome">
+        <h1>
+            <span>Let's</span>
+            <span>Get</span>
+            <span>Our</span>
+            <span>Hands</span>
+            <span>Dirty</span>
+        </h1>
+    </div>
+    <div class="counter">
+        <h1>This is a demo page to showcase DOM manipulation</h1>
+        <h2 id="head">0</h2>
+        <section>
+            <button id="count" onclick="increment()">Count</button>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
